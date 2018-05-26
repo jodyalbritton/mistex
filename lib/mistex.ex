@@ -1,6 +1,6 @@
 defmodule Mistex do
   @moduledoc """
-  Documentation for Mistex.
+  The Mistex Library provides an Elixer client to the Misty Robotics Platform API.
   """
 
   use HTTPoison.Base
@@ -13,6 +13,9 @@ defmodule Mistex do
     defstruct api_base: nil, headers: nil
   end
 
+  @doc """ 
+  The connect function builds your client. 
+  """
   def connect(ip_address) do
     %Client{api_base: "http://"<> ip_address <>"/api", headers: nil}
   end

@@ -1,6 +1,6 @@
 # Mistex
 
-**TODO: Add description**
+**An Elixir implementation of the Misty Robotics API**
 
 ## Installation
 
